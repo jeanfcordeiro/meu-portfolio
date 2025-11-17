@@ -1,35 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/theme.css';
+import './styles/global.css';
+import { Container } from './components/Container';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <Container>
+        <header className='header'>
+          <h2 className='title'>Jean Felipe</h2>
+          <div className='menu'>
+            <ul>
+              <li>
+                <a href='#'>Home</a>
+              </li>
+              <li>
+                <a href='#'>Projetos</a>
+              </li>
+              <li>
+                <a href='#'>Currículo</a>
+              </li>
+            </ul>
+          </div>
+        </header>
 
-export default App
+        <section>
+          <h1>Desenvolvedor Frot-End</h1>
+          <p>Headline Lorem ipsum dolor sit amet.</p>
+        </section>
+
+        <section>
+          <a href='#' className='btn'>
+            Projetos
+          </a>
+          <a href='#' className='btn'>
+            Currículo
+          </a>
+        </section>
+
+        <section>
+          <img src='../public/images/imagem.png' alt='' />
+          <h2>Sobre mim</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam vel
+            nemo voluptas perferendis quidem esse consequatur iure eos eum.
+          </p>
+        </section>
+
+        <footer>
+          <h2>Minhas redas</h2>
+          <ul>
+            <li>
+              <a href='#'>GitHub</a>
+            </li>
+            <li>
+              <a href='#'>LinkekIn</a>
+            </li>
+          </ul>
+        </footer>
+      </Container>
+    </>
+  );
+}
