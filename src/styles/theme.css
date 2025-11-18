@@ -21,6 +21,10 @@
 */
 
 :root {
+  /* Tamanhos de margens, gaps, padding, etc */
+  --sectionVerticalMargin: 4.8rem;
+  --elementGap: 2.8rem;
+
   /* 🎭 Tons de Cinza (cores dinâmicas que mudam entre claro/escuro) */
   --gray-100: #e6e9f0; /* Cinza mais claro (usado para fundos no modo escuro) */
   --gray-200: #cdd3e1;

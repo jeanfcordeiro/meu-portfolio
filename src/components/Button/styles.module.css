@@ -1,0 +1,20 @@
+.btn {
+  padding: 2rem 4.8rem;
+  text-align: center;
+  margin: 0 2rem;
+  border-radius: 1.4rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.default {
+  background-color: blue;
+  color: var(--text-default);
+}
+
+.light {
+  background-color: var(--text-default);
+  color: var(--primary);
+  border: 1px solid;
+}

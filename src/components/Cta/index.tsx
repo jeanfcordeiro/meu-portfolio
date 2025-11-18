@@ -1,12 +1,11 @@
+import { Button } from '../Button';
+import styles from './styles.module.css';
+
 export function Cta() {
   return (
-    <section className='cta'>
-      <a href='#' className='btn'>
-        Projetos
-      </a>
-      <a href='#' className='btn'>
-        Currículo
-      </a>
+    <section className={styles.cta}>
+      <Button variant='default'>Projetos</Button>
+      <Button variant='light'>Currículo</Button>
     </section>
   );
 }

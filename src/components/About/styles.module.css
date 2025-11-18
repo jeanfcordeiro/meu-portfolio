@@ -1,12 +1,6 @@
-.container-fluid {
-  max-width: auto;
-}
-
-.container {
-  max-width: 98rem;
-  margin: 0 auto;
-}
-
-.content {
-  margin: 3.2rem;
+.about {
+  margin-top: var(--sectionVerticalMargin);
+  display: flex;
+  flex-direction: column;
+  gap: var(--elementGap);
 }

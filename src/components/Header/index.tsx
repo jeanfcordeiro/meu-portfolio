@@ -1,20 +1,15 @@
+import { SquareMenuIcon } from 'lucide-react';
+import { Menu } from '../Menu';
+import styles from './styles.module.css';
+
 export function Header() {
   return (
-    <header className='header'>
-      <h2 className='title'>Jean Felipe</h2>
-      <nav className='menu' role='navigation'>
-        <ul>
-          <li>
-            <a href='#'>Home</a>
-          </li>
-          <li>
-            <a href='#'>Projetos</a>
-          </li>
-          <li>
-            <a href='#'>Currículo</a>
-          </li>
-        </ul>
-      </nav>
+    <header className={styles.header}>
+      <div className={styles.header__content}>
+        <h2 className={styles.title}>Jean Felipe</h2>
+        <SquareMenuIcon />
+      </div>
+      <Menu />
     </header>
   );
 }

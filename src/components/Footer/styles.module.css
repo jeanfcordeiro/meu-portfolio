@@ -1,12 +1,35 @@
-.container-fluid {
-  max-width: auto;
+.footer {
+  margin-top: var(--sectionVerticalMargin);
+  display: flex;
+  flex-direction: column;
+  gap: var(--elementGap);
 }
 
-.container {
-  max-width: 98rem;
-  margin: 0 auto;
+.footerNav {
+  list-style-type: none;
+  display: inline-flex;
+  gap: var(--elementGap);
+  justify-content: center;
 }
 
-.content {
-  margin: 3.2rem;
+.footer__linkItem {
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.footer__link {
+  color: var(--text-default);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+svg {
+  max-width: 2rem;
+  max-height: 2rem;
+  vertical-align: baseline;
 }

@@ -1,26 +1,32 @@
+import { Github, Linkedin } from 'lucide-react';
+import styles from './styles.module.css';
 export function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <h2>Minhas Redes</h2>
-      <ul>
-        <li>
+      <ul className={styles.footerNav}>
+        <li className={styles.footer__linkItem}>
           <a
+            className={styles.footer__link}
             href='#'
             target='_blank'
             rel='noopener noreferrer'
             aria-label='Link para meu perfil no GitHub'
           >
-            GitHub
+            <Github />
           </a>
         </li>
-        <li>
+        <li className={styles.footer__linkItem}>
           <a
+            className={styles.footer__link}
             href='#'
             target='_blank'
             rel='noopener noreferrer'
             aria-label='Link para meu perfil no LinkedIn'
           >
-            LinkedIn
+            <div>
+              <Linkedin />
+            </div>
           </a>
         </li>
       </ul>
