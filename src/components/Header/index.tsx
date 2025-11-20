@@ -7,7 +7,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.header__content}>
         <h2 className={styles.title}>Jean Felipe</h2>
-        <SquareMenuIcon />
+        <SquareMenuIcon className={styles.header__menu__icon} />
       </div>
       <Menu />
     </header>

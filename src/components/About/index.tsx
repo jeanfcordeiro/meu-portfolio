@@ -6,6 +6,7 @@ export function About() {
     <section className={styles.about}>
       <div>
         <img
+          className={styles.about__img}
           src='../public/images/imagem.png'
           alt='Jean Felipe, desenvolvedor front-end'
         />

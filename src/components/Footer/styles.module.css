@@ -9,7 +9,7 @@
   list-style-type: none;
   display: inline-flex;
   gap: var(--elementGap);
-  justify-content: center;
+  justify-content: left;
 }
 
 .footer__linkItem {

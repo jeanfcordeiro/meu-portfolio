@@ -12,13 +12,15 @@ export function App() {
     <>
       <Container>
         <Header />
-
+      </Container>
+      <Container>
         <main>
           <Hero />
           <Cta />
           <About />
         </main>
-
+      </Container>
+      <Container>
         <Footer />
       </Container>
     </>

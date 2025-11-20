@@ -6,10 +6,12 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
+  max-width: 28rem;
+  min-width: 26rem;
 }
 
 .default {
-  background-color: blue;
+  background-color: var(--primary);
   color: var(--text-default);
 }
 
