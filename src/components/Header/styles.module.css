@@ -1,5 +1,5 @@
 .header {
-  display: block;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -12,10 +12,4 @@
 .header__content {
   display: flex;
   justify-content: space-between;
-}
-
-@media (min-width: 1024px) {
-  .header__menu__icon {
-    display: none;
-  }
 }

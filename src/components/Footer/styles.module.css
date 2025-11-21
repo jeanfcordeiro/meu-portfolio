@@ -28,7 +28,7 @@
   gap: 0.5rem;
 }
 
-svg {
+.footer svg {
   max-width: 2rem;
   max-height: 2rem;
   vertical-align: baseline;

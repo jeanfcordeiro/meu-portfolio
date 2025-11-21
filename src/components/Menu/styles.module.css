@@ -1,19 +1,40 @@
-.menu {
-  /* background-color: red; */
+.content {
+  text-align: right;
+}
 
-  ul {
-    list-style-type: none;
-  }
+.menuOpen {
+  margin-top: 2rem;
+}
 
-  li {
-  }
+.menuClose {
+  display: none;
+  width: 0;
+}
 
-  a {
-    text-decoration: none;
-    display: block;
-    color: inherit;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 0.8rem;
+.icon {
+  text-align: right;
+}
+
+.icon .header__menu__icon {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+.listItems {
+  list-style-type: none;
+}
+
+.listLink {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.8rem;
+}
+
+@media (min-width: 1024px) {
+  .header__menu__icon {
+    display: none;
   }
 }
