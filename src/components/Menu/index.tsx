@@ -15,7 +15,7 @@ export function Menu() {
         className={active ? `${styles.icon} ${styles.iconActive}` : styles.icon}
         onClick={ToggleMode}
       >
-        <SquareMenuIcon className={styles.header__menu__icon} />
+        <SquareMenuIcon className={styles.header__menu__icon} strokeWidth={1} />
       </div>
       <div
         className={
