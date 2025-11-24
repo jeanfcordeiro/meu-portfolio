@@ -9,9 +9,11 @@
 
 .profile {
   position: relative;
-  height: 45rem;
-  width: 45rem;
-  border-radius: 5rem;
+  min-height: 30rem;
+  min-width: 30rem;
+  max-height: 45rem;
+  max-width: 45rem;
+  border-radius: 5rem 0 3rem 0;
   margin-top: 5rem;
 }
 
@@ -35,7 +37,8 @@
 }
 
 .profile__img {
-  height: 40rem;
+  min-height: 30rem;
+  max-height: 40rem;
   position: absolute;
   bottom: 0px;
   left: 50%;

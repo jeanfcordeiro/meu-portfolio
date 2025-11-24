@@ -9,7 +9,7 @@ export function About() {
       >
         <img
           className={styles.profile__img}
-          src=''
+          src='public\images\jean-felipe-cordeiro.png'
           alt='Jean Felipe, desenvolvedor front-end'
         />
       </div>
