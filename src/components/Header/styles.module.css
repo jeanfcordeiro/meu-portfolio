@@ -1,4 +1,11 @@
-.header {
+.header__theme {
+  display: flex;
+  justify-content: end;
+  gap: var(--elementGap);
+  border-bottom: 1px solid red;
+}
+
+.header__content {
   display: flex;
   justify-content: space-between;
 }
@@ -12,4 +19,23 @@
 .header__content {
   display: flex;
   justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header__menu__icon {
+  background-color: var(--gray-100);
+  color: var(--text-over-primary);
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

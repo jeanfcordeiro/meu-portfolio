@@ -6,10 +6,12 @@ import { Hero } from './components/Hero';
 import { Cta } from './components/Cta';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
+import { Theme } from './components/Theme';
 
 export function App() {
   return (
     <>
+      <Theme />
       <Container>
         <Header />
       </Container>

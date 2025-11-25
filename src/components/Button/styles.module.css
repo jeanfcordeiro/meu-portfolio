@@ -12,11 +12,11 @@
 
 .default {
   background-color: var(--primary);
-  color: var(--text-default);
+  color: var(--gray-100);
 }
 
 .light {
-  background-color: var(--text-default);
-  color: var(--primary);
+  background-color: var(--gray-100);
+  color: var(--gray-900);
   border: 1px solid;
 }
