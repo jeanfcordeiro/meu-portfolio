@@ -11,8 +11,8 @@
 }
 
 .default {
-  background-color: var(--primary);
   color: var(--gray-100);
+  background-color: var(--primary);
 }
 
 .light {

@@ -7,7 +7,7 @@ type ButtonProps = {
 
 export function Button({ children, variant = 'default' }: ButtonProps) {
   return (
-    <a href='#' className={`${styles.btn} ${styles[variant]}`}>
+    <a href='#' className={`${styles.btn} ${styles[variant]} `}>
       {children}
     </a>
   );

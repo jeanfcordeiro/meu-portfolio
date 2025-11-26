@@ -1,30 +1,7 @@
 import './styles/theme.css';
 import './styles/global.css';
-import { Container } from './components/Container';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Cta } from './components/Cta';
-import { About } from './components/About';
-import { Footer } from './components/Footer';
-import { Theme } from './components/Theme';
+import { Home } from './pages/Home';
 
 export function App() {
-  return (
-    <>
-      <Theme />
-      <Container>
-        <Header />
-      </Container>
-      <Container>
-        <main>
-          <Hero />
-          <Cta />
-          <About />
-        </main>
-      </Container>
-      <Container>
-        <Footer />
-      </Container>
-    </>
-  );
+  return <Home />;
 }
