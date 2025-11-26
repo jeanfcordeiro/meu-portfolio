@@ -10,7 +10,7 @@ export function Menu() {
   };
 
   return (
-    <div className={styles.content}>
+    <div className={styles.content__menu}>
       <div
         className={active ? `${styles.icon} ${styles.iconActive}` : styles.icon}
         onClick={ToggleMode}

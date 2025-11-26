@@ -8,6 +8,10 @@
   cursor: pointer;
   max-width: 28rem;
   min-width: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .default {

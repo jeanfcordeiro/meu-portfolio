@@ -5,7 +5,7 @@ export function Cta() {
   return (
     <section className={styles.cta}>
       <Button variant='default'>Projetos</Button>
-      <Button variant='light'>Currículo</Button>
+      <Button variant='light'>Qualificações</Button>
     </section>
   );
 }

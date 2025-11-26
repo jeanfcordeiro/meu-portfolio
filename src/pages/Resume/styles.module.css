@@ -1,0 +1,37 @@
+.resume__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--elementGap);
+}
+
+.resume__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume__titles {
+  margin-top: var(--elementGap);
+}
+
+.resume__btn {
+  margin-top: var(--elementGap);
+}
+
+.skills__list {
+  margin-top: var(--elementGap);
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--elementGap);
+  padding: 0 2rem;
+}
+
+.skills__list li::marker {
+  content: '▹';
+  color: var(--primary);
+  font-size: 2rem;
+}

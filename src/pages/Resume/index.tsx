@@ -1,0 +1,76 @@
+import { Download } from 'lucide-react';
+import { Button } from '../../components/Button';
+import { Container } from '../../components/Container';
+import { ProfileCard } from '../../components/ProfileCard';
+import { SectionTitle } from '../../components/SectionTitle';
+import { MainTemplate } from '../../template/MainTemplate';
+
+import styles from './styles.module.css';
+
+export function Resume() {
+  return (
+    <MainTemplate>
+      <Container>
+        <main>
+          <SectionTitle>Qualificações</SectionTitle>
+          <section className={styles.resume__section}>
+            <div className={styles.resume__header}>
+              <h2 className={styles.resume__titles}>Experiências</h2>
+              <div className={styles.resume__btn}>
+                <Button>
+                  <Download />
+                  Currículo (PDF)
+                </Button>
+              </div>
+            </div>
+
+            <ProfileCard
+              title='Web Developer'
+              period='2019 – Present'
+              location='Los Angeles, CA'
+              description='Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda nihil, aut ipsa eos inventore reiciendis excepturi
+                qui, molestias officia sit id. Qui iusto nulla impedit
+                voluptates laudantium eveniet necessitatibus sit.'
+            />
+            <ProfileCard
+              title='Web Developer'
+              period='2019 – Present'
+              location='Los Angeles, CA'
+              description='Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda nihil, aut ipsa eos inventore reiciendis excepturi
+                qui, molestias officia sit id. Qui iusto nulla impedit
+                voluptates laudantium eveniet necessitatibus sit.'
+            />
+          </section>
+
+          <section className={styles.resume__section}>
+            <h2 className={styles.resume__titles}>Formação</h2>
+
+            <ProfileCard
+              title='Análise e Desenvolvimento de Sistemas'
+              period='2020 - 2025'
+              location='Los Angeles, CA'
+              description='Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda nihil, aut ipsa eos inventore reiciendis excepturi
+                qui, molestias officia sit id. Qui iusto nulla impedit
+                voluptates laudantium eveniet necessitatibus sit.'
+            />
+          </section>
+          <section className={styles.resume__section_skills}>
+            <h2 className={styles.resume__titles}>Habilidades Técnicas</h2>
+            <div>
+              <ul className={styles.skills__list}>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </Container>
+    </MainTemplate>
+  );
+}
