@@ -1,9 +1,8 @@
 import './styles/theme.css';
 import './styles/global.css';
-import { Home } from './pages/Home';
-import { Resume } from './pages/Resume';
-import { Projects } from './pages/Projects';
+
+import { MainRouter } from './routers/MainRouter';
 
 export function App() {
-  return <Projects />;
+  return <MainRouter />;
 }

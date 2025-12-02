@@ -8,7 +8,7 @@ export function Footer() {
         <li className={styles.footer__linkItem}>
           <a
             className={styles.footer__link}
-            href='#'
+            href='https://github.com/jeanfcordeiro/'
             target='_blank'
             rel='noopener noreferrer'
             aria-label='Link para meu perfil no GitHub'
@@ -19,7 +19,7 @@ export function Footer() {
         <li className={styles.footer__linkItem}>
           <a
             className={styles.footer__link}
-            href='#'
+            href='https://www.linkedin.com/in/jeanfcordeiro/'
             target='_blank'
             rel='noopener noreferrer'
             aria-label='Link para meu perfil no LinkedIn'

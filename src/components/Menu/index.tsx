@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './styles.module.css';
 import { SquareMenuIcon } from 'lucide-react';
+import { RouterLink } from '../RouterLink';
 
 export function Menu() {
   const [active, setMode] = useState(false);
@@ -27,19 +28,19 @@ export function Menu() {
         <nav className={styles.list} role='navigation'>
           <ul className={styles.listItems}>
             <li>
-              <a className={styles.listLink} href='#'>
+              <RouterLink className={styles.listLink} href='/'>
                 Home
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a className={styles.listLink} href='#'>
+              <RouterLink className={styles.listLink} href='/projects'>
                 Projetos
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a className={styles.listLink} href='#'>
-                Currículo
-              </a>
+              <RouterLink className={styles.listLink} href='/resume'>
+                Qualificações
+              </RouterLink>
             </li>
           </ul>
         </nav>

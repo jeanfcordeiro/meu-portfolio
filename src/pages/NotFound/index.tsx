@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Container } from '../../components/Container';
 import { GenericHtml } from '../../components/GenericHtml';
 import { MainTemplate } from '../../template/MainTemplate';
@@ -13,9 +14,9 @@ export function NotFound() {
             A página que você está procurando pode ter sido removida ou o link
             está incorreto.
           </p>
-          <a href='/' className='btn'>
+          <Link to='/' className='btn'>
             Voltar para o Início
-          </a>
+          </Link>
         </GenericHtml>
       </Container>
     </MainTemplate>

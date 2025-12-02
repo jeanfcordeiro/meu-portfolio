@@ -24,3 +24,8 @@
   color: var(--gray-900);
   border: 1px solid;
 }
+
+.small {
+  padding: 1.6rem 3.2rem;
+  min-width: 20rem;
+}

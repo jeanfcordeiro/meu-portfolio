@@ -25,11 +25,11 @@ export function ProjectContainer({
         <p>{description}</p>
 
         <div className={styles.container__buttons}>
-          <Button variant='default'>
+          <Button variant='default' size='small'>
             <AppWindow />
             Ver Projeto
           </Button>
-          <Button variant='default'>
+          <Button variant='default' size='small'>
             <Github />
             Ver Código
           </Button>
