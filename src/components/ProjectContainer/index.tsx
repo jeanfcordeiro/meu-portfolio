@@ -25,11 +25,11 @@ export function ProjectContainer({
         <p>{description}</p>
 
         <div className={styles.container__buttons}>
-          <Button variant='default' size='small'>
+          <Button variant='default' size='small' href='/projects/1'>
             <AppWindow />
             Ver Projeto
           </Button>
-          <Button variant='default' size='small'>
+          <Button variant='default' size='small' href='/projects/2'>
             <Github />
             Ver Código
           </Button>

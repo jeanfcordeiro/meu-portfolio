@@ -1,0 +1,51 @@
+.project__container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--elementGap);
+
+  h3 {
+    margin-bottom: var(--elementGap);
+  }
+}
+
+.project__techList ul {
+  list-style-type: none;
+  display: flex;
+  gap: var(--elementGap);
+}
+
+.project__techList li {
+  background-color: var(--primary);
+  color: var(--text-default);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.project__images {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+  padding-right: 0.75rem;
+  align-items: center;
+
+  scroll-snap-type: x mandatory;
+
+  img {
+    margin-left: 0.75rem;
+    width: calc(100% - 1.5rem);
+    flex: 0 0 calc(100% - 1.5rem);
+    scroll-snap-align: center;
+
+    &:first-child {
+      margin-left: 1.5rem;
+    }
+
+    &:last-child {
+      margin-right: 1.5rem;
+    }
+  }
+}
