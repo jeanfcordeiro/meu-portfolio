@@ -6,12 +6,14 @@ type ProjectContainerProps = {
   image: string;
   title: string;
   description: string;
+  href: string;
 };
 
 export function ProjectContainer({
   image,
   title,
   description,
+  href,
 }: ProjectContainerProps) {
   return (
     <div className={styles.projects__container}>
@@ -25,11 +27,11 @@ export function ProjectContainer({
         <p>{description}</p>
 
         <div className={styles.container__buttons}>
-          <Button variant='default' size='small' href='/projects/1'>
+          <Button variant='default' size='small' href={href}>
             <AppWindow />
             Ver Projeto
           </Button>
-          <Button variant='default' size='small' href='/projects/2'>
+          <Button variant='default' size='small' href={href}>
             <Github />
             Ver Código
           </Button>

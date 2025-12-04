@@ -5,11 +5,15 @@ import { MainTemplate } from '../../template/MainTemplate';
 import { projectsData } from '../../data/projectsData';
 
 import styles from './styles.module.css';
+import { useParams } from 'react-router';
+import { NotFound } from '../../pages/NotFound';
 
-export function Project() {
-  const project = projectsData.find(item => item.id === '2');
+export const Project = () => {
+  const params = useParams();
+  const { id } = params;
+  const project = projectsData.find(item => item.id === id);
 
-  if (!project) return null;
+  if (!project) return <NotFound />;
   return (
     <MainTemplate>
       <Container>
@@ -45,4 +49,4 @@ export function Project() {
       </Container>
     </MainTemplate>
   );
-}
+};
