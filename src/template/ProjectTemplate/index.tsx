@@ -19,7 +19,7 @@ export const Project = () => {
       <Container>
         <div className={styles.project__container}>
           <SectionTitle>{project.title}</SectionTitle>
-          <p>{project.description}</p>
+          <p>{project.shortDescription}</p>
 
           <div className={styles.project__techList}>
             <h3>Tecnologias</h3>
@@ -31,7 +31,7 @@ export const Project = () => {
           </div>
 
           <div className={styles.project__images}>
-            {project.images.map((imgSrc, index) => (
+            {project.gallery.map((imgSrc, index) => (
               <img
                 key={index}
                 src={imgSrc}
@@ -43,7 +43,7 @@ export const Project = () => {
 
           <div>
             <h3>Sobre o Projeto</h3>
-            <p>{project.about}</p>
+            <p>{project.fullDescription}</p>
           </div>
         </div>
       </Container>

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
 import { Home } from '../../pages/Home';
 import { Resume } from '../../pages/Resume';
-import { Projects } from '../../pages/Projects';
+import { ProjectsPage } from '../../pages/ProjectsPage';
 import { NotFound } from '../../pages/NotFound';
 import { useEffect } from 'react';
 import { Project } from '../../template/ProjectTemplate';
@@ -23,7 +23,7 @@ export function MainRouter() {
         <Route path='/' element={<Home />} />
         <Route path='/resume' element={<Resume />} />
         <Route path='/projects/:id' element={<Project />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/projects' element={<ProjectsPage />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <ScrollToTop />

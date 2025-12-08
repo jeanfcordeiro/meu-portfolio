@@ -1,4 +1,4 @@
-.projects__container {
+.projects__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
   margin-bottom: 1rem;
 }
 
-.projects__container img {
+.projects__card img {
   width: 100%;
   height: auto;
   border-radius: 2rem 2rem 0 0;
@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.container__buttons {
+.card__buttons {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -28,14 +28,14 @@
 }
 
 @media (min-width: 768px) {
-  .container__buttons {
+  .card__buttons {
     flex-direction: row;
   }
 }
 
 @media (min-width: 1024px) {
   @media (min-width: 1024px) {
-    .projects__container {
+    .projects__card {
       flex-direction: row-reverse;
       align-items: stretch;
       border-radius: 0 2.4rem 2.4rem 0;
@@ -43,7 +43,7 @@
       overflow: hidden;
     }
 
-    .projects__container img {
+    .projects__card img {
       flex: 0 0 40%;
       max-width: 40%;
       height: auto;
