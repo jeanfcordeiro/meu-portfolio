@@ -9,10 +9,24 @@
   }
 }
 
+.project__link {
+  color: var(--primary);
+}
+
+.project__link svg {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.project__link:hover {
+  text-decoration: underline;
+}
+
 .project__techList ul {
   list-style-type: none;
   display: flex;
   gap: var(--elementGap);
+  flex-wrap: wrap;
 }
 
 .project__techList li {
@@ -47,5 +61,11 @@
     &:last-child {
       margin-right: 1.5rem;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .project__techList ul {
+    flex-wrap: nowrap;
   }
 }

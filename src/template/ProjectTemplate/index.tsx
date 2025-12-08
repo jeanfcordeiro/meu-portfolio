@@ -7,6 +7,7 @@ import { projectsData } from '../../data/projectsData';
 import styles from './styles.module.css';
 import { useParams } from 'react-router';
 import { NotFound } from '../../pages/NotFound';
+import { MoveLeft } from 'lucide-react';
 
 export const Project = () => {
   const params = useParams();
@@ -17,6 +18,10 @@ export const Project = () => {
   return (
     <MainTemplate>
       <Container>
+        <a href='/projects' className={styles.project__link}>
+          <MoveLeft />
+          Voltar para projetos
+        </a>
         <div className={styles.project__container}>
           <SectionTitle>{project.title}</SectionTitle>
           <p>{project.shortDescription}</p>
