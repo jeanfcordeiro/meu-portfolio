@@ -36,6 +36,10 @@
   );
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .profile__img {
   min-height: 30rem;
   max-height: 40rem;

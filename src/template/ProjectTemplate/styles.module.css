@@ -51,6 +51,7 @@
   img {
     margin-left: 0.75rem;
     width: calc(100% - 1.5rem);
+    height: 90vh;
     flex: 0 0 calc(100% - 1.5rem);
     scroll-snap-align: center;
 

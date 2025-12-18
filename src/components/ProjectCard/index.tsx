@@ -3,7 +3,6 @@ import type { Project } from '../../types';
 import { AppWindow, Github } from 'lucide-react';
 import { Button } from '../Button';
 import styles from './styles.module.css';
-// import { Link } from 'react-router';
 
 type ProjectCardProps = {
   project: Project;
@@ -11,7 +10,6 @@ type ProjectCardProps = {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    // <Link to={`projects/${project.id}`}>
     <div className={styles.projects__card}>
       <img
         src={project.thumbnail}

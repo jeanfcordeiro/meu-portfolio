@@ -17,7 +17,7 @@ export function Resume() {
             <div className={styles.resume__header}>
               <h2 className={styles.resume__titles}>Experiências</h2>
               <div className={styles.resume__btn}>
-                <Button>
+                <Button href='/curriculo.pdf'>
                   <Download />
                   Currículo (PDF)
                 </Button>
@@ -25,18 +25,18 @@ export function Resume() {
             </div>
 
             <ProfileCard
-              title='Web Developer'
-              period='2019 – Present'
-              location='Los Angeles, CA'
+              title='Front-end Developer'
+              period='2022 – 2025'
+              location='Curitiba, PR'
               description='Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Assumenda nihil, aut ipsa eos inventore reiciendis excepturi
                 qui, molestias officia sit id. Qui iusto nulla impedit
                 voluptates laudantium eveniet necessitatibus sit.'
             />
             <ProfileCard
-              title='Web Developer'
-              period='2019 – Present'
-              location='Los Angeles, CA'
+              title='Front-end Developer'
+              period='2022 – 2025'
+              location='Curitiba, PR'
               description='Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Assumenda nihil, aut ipsa eos inventore reiciendis excepturi
                 qui, molestias officia sit id. Qui iusto nulla impedit
@@ -49,8 +49,8 @@ export function Resume() {
 
             <ProfileCard
               title='Análise e Desenvolvimento de Sistemas'
-              period='2020 - 2025'
-              location='Los Angeles, CA'
+              period='2022 - 2025'
+              location='Curitiba, PR'
               description='Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Assumenda nihil, aut ipsa eos inventore reiciendis excepturi
                 qui, molestias officia sit id. Qui iusto nulla impedit

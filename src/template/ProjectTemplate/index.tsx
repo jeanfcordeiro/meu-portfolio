@@ -51,6 +51,10 @@ export const Project = () => {
             <p>{project.fullDescription}</p>
           </div>
         </div>
+        <a href='/projects' className={styles.project__link}>
+          <MoveLeft />
+          Voltar para projetos
+        </a>
       </Container>
     </MainTemplate>
   );
